@@ -1,0 +1,150 @@
+body{
+    font-family: 'Inter', sans-serif;
+    font-family: 'Lexend Deca', sans-serif;
+    color: white;
+    font-size: 15px;
+    background-color: hsl(233, 47%, 7%);
+}
+.container{
+   display: flex;
+   justify-content: center;
+   margin: auto;
+   align-items: center;
+   height: 620px;
+}
+.card{
+    background: hsl(246, 38%, 16%);
+    border-radius: 10px;
+    display: flex;
+    justify-self: center;
+    box-sizing: border-box;
+}
+
+        
+.card_info{
+    width: 40%;
+    min-width: 455px;
+    max-width: 355px;
+    max-height: 455px;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    box-sizing: border-box;
+    margin: auto;
+    margin: 0 32px;
+    padding: 48px;
+}
+.card_image{
+    min-width: 508px;
+    max-width: 455px;
+    background-color: hsl(280, 100%, 25%);
+    border-radius: 0 10px 10px 0;
+    background-size: cover;
+}
+
+
+.desktop-img {
+    width: 100%;
+    height: 100%;
+    border-radius: 0 10px 10px 0;
+    filter: opacity(50%);
+  }
+
+.mobile-img{
+    display: none;
+}
+
+h3{
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.violet {
+    color: hsl(277, 64%, 61%);
+}
+
+.para{
+    color: hsla(0, 0%, 100%, 0.6);
+    line-height: 1.5;
+    margin-top: 6px;
+}
+
+.stats{
+    display: flex;
+    justify-content: center;
+    margin: 51px 0;
+}
+
+.companies p, .templates p, .queries p{
+    font-family: "Lexend Deca", sans-serif;
+    font-size: 11px;
+    margin-top: 4px;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.companies, .templates, .queries {
+    letter-spacing: 1.5px;
+    margin: 0 32px;
+  }
+
+.number {
+    font-size: 1.5em;
+    color: white;
+    font-weight: 700;
+  }
+  
+  @media screen and (max-width: 750px) {
+    .container {
+      align-content: center;
+    }
+  
+    .card {
+      flex-direction: column;
+      margin: auto;
+    }
+  
+    .desktop-img {
+      display: none;
+    }
+  
+    .card_image {
+      order: 1;
+      border-radius: 10px 10px 0 0;
+      min-width: 300px;
+      max-width: 350px;
+    }
+  
+    .mobile-img {
+      display: flex;
+      width: 100%;
+      height: 100%;
+      filter: opacity(50%);
+      border-radius: 10px 10px 0 0;
+    }
+  
+    .card_info {
+      order: 2;
+      min-width: 300px;
+      max-width: 350px;
+      text-align: center;
+      max-height: 543px;
+      height: 100%;
+      margin: auto;
+      padding: 16px;
+    }
+  
+    .companies,
+    .templates,
+    .queries {
+      letter-spacing: 1.5px;
+      margin: 0;
+      padding-bottom: 0.9em;
+    }
+  
+    .stats {
+      flex-direction: column;
+      margin-top: 16px;
+    }
+  
+  }
